@@ -1,5 +1,5 @@
 # SafeVMT
-A header only, easy to use VMT hooking class.
+A safe, header only easy to use VMT hooking class.
 
 Why it's truly safe:
 - Doesn't change the Virtual Table page protection rights.
