@@ -2,7 +2,7 @@
 
 #include <Windows.h>
 
-class SafeVMT
+class CVMT
 {
 private:
     uintptr_t* vmt;
@@ -13,7 +13,7 @@ public:
 
     // ----------------------------------------------------------------------------------------------------------------------
 
-    SafeVMT(void* vTableClass)
+    CVMT(void* vTableClass)
     {
         this->vTableAddr = reinterpret_cast<uintptr_t**>(vTableClass);
 
