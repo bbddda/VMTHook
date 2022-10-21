@@ -1,5 +1,5 @@
 # VMT
-A safe, header only easy to use VMT hooking class.
+A header only easy to use VMT hooking class.
 
 Example usage:
 
@@ -12,7 +12,7 @@ unsigned int GetVirtualFunction(void* virtualClass, unsigned int virtualIndex)
     
 int main()
 {
-   VMHook* virtualMethodHook = new VMHook(dummyClass);
+   CVMT* virtualMethodHook = new CVMT(dummyClass);
    
    void* addr = reinterpret_cast<void*>(GetVirtualFunction(yourClass, yourIndex));
    
